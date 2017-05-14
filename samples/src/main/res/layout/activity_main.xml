@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context="sysu.mobile.limk.sensorutils.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_calibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/begin_calibrate" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_gyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_btns"
+        android:layout_marginTop="12dp"
+        android:text="@string/gyroscope" />
+
+    <TextView
+        android:id="@+id/tv_gyroscope_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_gyroscope"
+        android:text="aaaa" />
+
+    <TextView
+        android:id="@+id/tv_compasss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_gyroscope_value"
+        android:layout_marginTop="12dp"
+        android:text="@string/compass" />
+
+    <TextView
+        android:id="@+id/tv_compasss_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_compasss"
+        android:text="aaaa" />
+
+</RelativeLayout>

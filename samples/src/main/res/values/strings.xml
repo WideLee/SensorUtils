@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SensorUtils</string>
+    <string name="reset">Reset</string>
+    <string name="begin_calibrate">Calibrate</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="compass">compass</string>
+</resources>

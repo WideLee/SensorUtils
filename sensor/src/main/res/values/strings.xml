@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sensorutils</string>
+    <string name="begin_calibrate">Calibrate</string>
+</resources>

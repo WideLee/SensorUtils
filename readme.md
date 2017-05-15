@@ -1,5 +1,7 @@
 Get the relative horizontal rotation angle with gyroscope reading
 
+[ ![Download](https://api.bintray.com/packages/widelee/maven/sensorutils/images/download.svg) ](https://bintray.com/widelee/maven/sensorutils/_latestVersion)
+
 ### 使用方法
 - dependencies 里添加
 ``` gradle

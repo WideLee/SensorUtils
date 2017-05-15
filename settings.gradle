@@ -1,1 +1,1 @@
-include ':samples', ':sensor'
+include ':samples', ':sensorutils'

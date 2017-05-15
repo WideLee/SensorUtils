@@ -10,7 +10,7 @@ import java.util.Locale;
 
 /**
  * Jama = Java Matrix class.
- * <p/>
+ * <p>
  * The Java Matrix Class provides the fundamental operations of numerical linear
  * algebra. Various constructors create Matrices from two dimensional arrays of
  * double precision floating point numbers. Various "gets" and "sets" provide
@@ -20,13 +20,13 @@ import java.util.Locale;
  * printing matrices are also included. All the operations in this version of
  * the Matrix Class involve real matrices. Complex matrices may be handled in a
  * future version.
- * <p/>
+ * <p>
  * Five fundamental matrix decompositions, which consist of pairs or triples of
  * matrices, permutation vectors, and the like, produce results in five
  * decomposition classes. These decompositions are accessed by the Matrix class
  * to compute solutions of simultaneous linear equations, determinants, inverses
  * and other matrix functions. The five decompositions are:
- * <p/>
+ * <p>
  * <UL>
  * <LI>Cholesky Decomposition of symmetric, positive definite matrices.
  * <LI>LU Decomposition of rectangular matrices.
@@ -37,10 +37,10 @@ import java.util.Locale;
  * </UL>
  * <DL>
  * <DT><B>Example of use:</B></DT>
- * <p/>
+ *
  * <DD>Solve a linear system A x = b and compute the residual norm, ||b - A x||.
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <PRE>
  * double[][] vals = { { 1., 2., 3 }, { 4., 5., 6. }, { 7., 8., 10. } };
  * Matrix A = new Matrix(vals);
@@ -49,7 +49,7 @@ import java.util.Locale;
  * Matrix r = A.times(x).minus(b);
  * double rnorm = r.normInf();
  * </PRE>
- * <p/>
+ * <p>
  * </DD>
  * </DL>
  *

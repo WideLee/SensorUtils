@@ -18,7 +18,7 @@ startActivity(intent);
 ``` 
 校准的原理是静止放置手机统计出陀螺仪的线性漂移，以便在测试过程中减去线性漂移来减少累积误差
 
-- 初始化SensorUtils并注册传感器（通常在OnResume中）
+- 初始化SensorUtils并注册传感器（通常在onResume中）
 ```
 void onResume() {
     super.onResume();
@@ -28,7 +28,7 @@ void onResume() {
     mSensorUtils.reset();
 }
 ```
-- 取消注册传感器（通常在OnPause中）
+- 取消注册传感器（通常在onPause中）
 ```
 protected void onPause() {
     super.onPause();

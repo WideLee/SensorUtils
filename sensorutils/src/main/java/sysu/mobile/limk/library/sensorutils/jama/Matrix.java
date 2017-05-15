@@ -1,4 +1,4 @@
-package sysu.mobile.limk.library.jama;
+package sysu.mobile.limk.library.sensorutils.jama;
 
 import java.io.BufferedReader;
 import java.io.PrintWriter;

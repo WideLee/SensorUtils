@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-import sysu.mobile.limk.library.CalibrationActivity;
-import sysu.mobile.limk.library.SensorUtils;
+import sysu.mobile.limk.library.sensorutils.CalibrationActivity;
+import sysu.mobile.limk.library.sensorutils.SensorUtils;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
     Runnable mUpdateSensorRunnable = new Runnable() {
         @Override
         public void run() {
-            mGyroTextView.setText(String.format(Locale.ENGLISH, "%f", mSensorUtils.getAngle()));
+            double gyroAngle = mSensorUtils.getAngle();
+            if (Double.MAX_VALUE == gyroAngle) {
+                mGyroTextView.setText(String.format(Locale.ENGLISH, "NaN"));
+            } else {
+                mGyroTextView.setText(String.format(Locale.ENGLISH, "%f", gyroAngle));
+            }
             mCompassTextView.setText(String.format(Locale.ENGLISH, "%f", mSensorUtils.getCompassDirection()));
             mHandler.postDelayed(this, 500);
         }

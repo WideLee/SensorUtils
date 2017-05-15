@@ -1,4 +1,4 @@
-package sysu.mobile.limk.library;
+package sysu.mobile.limk.library.sensorutils;
 
 import android.app.Activity;
 import android.content.Context;

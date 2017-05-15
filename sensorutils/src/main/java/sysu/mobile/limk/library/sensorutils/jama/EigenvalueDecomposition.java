@@ -1,4 +1,4 @@
-package sysu.mobile.limk.library.jama;
+package sysu.mobile.limk.library.sensorutils.jama;
 
 /**
  * Eigenvalues and eigenvectors of a real matrix.

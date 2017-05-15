@@ -1,4 +1,4 @@
-package sysu.mobile.limk.library;
+package sysu.mobile.limk.library.sensorutils;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -7,7 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.location.LocationManager;
 
-import sysu.mobile.limk.library.jama.Matrix;
+import sysu.mobile.limk.library.sensorutils.jama.Matrix;
 
 public class SensorUtils {
     private static SensorUtils mInstance;

@@ -1,4 +1,4 @@
-package sysu.mobile.limk.library;
+package sysu.mobile.limk.library.sensorutils;
 
 import org.junit.Test;
 

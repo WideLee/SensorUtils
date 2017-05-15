@@ -5,7 +5,7 @@ Get the relative horizontal rotation angle with gyroscope reading
 ### 使用方法
 - dependencies 里添加
 ``` gradle
-compile 'sysu.mobile.limk:sensorutils:0.2'
+compile 'sysu.mobile.limk:sensorutils:0.22'
 ```
 
 - 获取一个SensorUtils实例

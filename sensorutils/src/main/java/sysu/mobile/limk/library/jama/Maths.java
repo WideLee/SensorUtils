@@ -4,6 +4,9 @@ public class Maths {
 
     /**
      * sqrt(a^2 + b^2) without under/overflow. *
+     * @param a the parameter a
+     * @param b the parameter b
+     * @return sqrt(a^2 + b^2)
      */
 
     public static double hypot(double a, double b) {

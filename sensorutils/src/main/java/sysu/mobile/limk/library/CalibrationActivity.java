@@ -91,7 +91,7 @@ public class CalibrationActivity extends Activity {
     public void onResume() {
         super.onResume();
         mSensorManager.registerListener(mCalibrateGyroLogListener, mGyroSensor,
-                SensorManager.SENSOR_DELAY_NORMAL);
+                SensorManager.SENSOR_DELAY_FASTEST);
     }
 
     @Override

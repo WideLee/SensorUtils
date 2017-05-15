@@ -3,7 +3,7 @@ Get the relative horizontal rotation angle with gyroscope reading
 ### 使用方法
 - dependencies 里添加
 ```
-compile 'sysu.mobile.limk:sensorutils:0.1'
+compile 'sysu.mobile.limk:sensorutils:0.2'
 ```
 
 - 获取一个SensorUtils实例
@@ -15,7 +15,7 @@ mSensorUtils = SensorUtils.getInstance(context);
 ```
 Intent intent = new Intent(MainActivity.this, CalibrationActivity.class);
 startActivity(intent);
-``` 
+```
 校准的原理是静止放置手机统计出陀螺仪的线性漂移，以便在测试过程中减去线性漂移来减少累积误差
 
 - 初始化SensorUtils并注册传感器（通常在onResume中）
@@ -46,3 +46,7 @@ mSensorUtils.getAngle()
 mSensorUtils.getCompassDirection()
 ```
 
+- Samples运行截图
+
+
+![1](images/1.png)

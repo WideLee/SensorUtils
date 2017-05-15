@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_gyroscope"
-        android:text="aaaa" />
+        android:text="0.0000" />
 
     <TextView
         android:id="@+id/tv_compasss"
@@ -60,6 +60,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_compasss"
-        android:text="aaaa" />
+        android:text="128.0314" />
 
 </RelativeLayout>

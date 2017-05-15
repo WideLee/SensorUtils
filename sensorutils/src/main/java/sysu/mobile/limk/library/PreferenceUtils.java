@@ -7,8 +7,6 @@ import android.util.Log;
 import java.util.Set;
 
 public class PreferenceUtils {
-    public static final String KEY_CURRENT_IP = "current_ip";
-    public static final String KEY_CURRENT_MAP = "current_map";
 
     public static final String PREFERENCE_NAME = "setting";
 

@@ -12,6 +12,11 @@ import sysu.mobile.limk.library.jama.Matrix;
 public class SensorUtils {
     private static SensorUtils mInstance;
 
+    /**
+     * Get SensorUtils instance
+     * @param context The Context the sensor is running in,
+     * @return a SensorUtils instance
+     */
     public static synchronized SensorUtils getInstance(Context context) {
         if (mInstance == null) {
             mInstance = new SensorUtils(context);
@@ -114,6 +119,9 @@ public class SensorUtils {
         mOrientationSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
     }
 
+    /**
+     * Register sensors, including gyroscope, gravity and orientation
+     */
     public void registerSensor() {
         mSensorManager.registerListener(mGyroEventListener, mGyroSensor,
                 SensorManager.SENSOR_DELAY_FASTEST);
@@ -129,6 +137,9 @@ public class SensorUtils {
                 SensorManager.SENSOR_DELAY_FASTEST);
     }
 
+    /**
+     * Unregister sensors
+     */
     public void unregisterSensor() {
         mSensorManager.unregisterListener(mGyroEventListener);
         mSensorManager.unregisterListener(mGravEventListener);
@@ -136,6 +147,9 @@ public class SensorUtils {
         mSensorManager.unregisterListener(mOrientationSensorEventListener);
     }
 
+    /**
+     * Initialize the parameters
+     */
     public void reset() {
         isReady = false;
         mCurRotationMatrix = Matrix.identity(3, 3);
@@ -148,6 +162,10 @@ public class SensorUtils {
         }
     }
 
+    /**
+     * get the horizontal rotation angle begin at the direction which reset() called
+     * @return the rotation angle
+     */
     public double getAngle() {
 
         if (!isReady) {
@@ -247,6 +265,10 @@ public class SensorUtils {
         return (degree + 720) % 360;
     }
 
+    /**
+     * Get compass reading
+     * @return the compass reading
+     */
     public float getCompassDirection() {
         return mTargetDirection;
     }

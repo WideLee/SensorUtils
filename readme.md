@@ -38,7 +38,7 @@ protected void onPause() {
 
 - 获取从reset时刻开始的相对旋转角度
 ```
-mSensorUtils.getAngle())
+mSensorUtils.getAngle()
 ```
 
 - 获取当前时刻罗盘读数
